@@ -15,22 +15,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pick The Best Movie" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EyO-N2-NhQ">
-                                <rect key="frame" x="54" y="89" width="307" height="61"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EyO-N2-NhQ">
+                                <rect key="frame" x="72.5" y="89" width="269" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="xOn-MK-nAJ"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Pick The Best Movie">
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" metaFont="system" size="31"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VnM-QX-RRZ">
-                                <rect key="frame" x="20" y="202" width="118" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="movies" translatesAutoresizingMaskIntoConstraints="NO" id="eK4-aa-eDw">
+                                <rect key="frame" x="20" y="289.5" width="233.5" height="426.5"/>
+                            </imageView>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OOq-7O-sac">
+                                <rect key="frame" x="20" y="772" width="374" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="mqb-VR-kYc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectMovie:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jcu-mw-8co"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RIj-Z4-FzU">
+                                <rect key="frame" x="266.5" y="347.5" width="127.5" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="7oc-gw-mL5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VnM-QX-RRZ">
+                                <rect key="frame" x="20" y="208" width="109.5" height="47.5"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="75" id="fPX-TJ-7pZ"/>
+                                </constraints>
                                 <state key="normal" title="Star Wars:  The Last Jedi">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Star Wars:  The Last Jedi">
                                             <attributes>
                                                 <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <font key="NSFont" metaFont="system" size="15"/>
+                                                <font key="NSFont" metaFont="system" size="16"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -40,15 +77,35 @@
                                     <action selector="selectMovie:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yxH-PP-Hus"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hdf-lj-HVC">
-                                <rect key="frame" x="276" y="202" width="118" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Msq-xb-YBY">
+                                <rect key="frame" x="160.5" y="208" width="93" height="47.5"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="93" id="99E-0y-myV"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Inception">
+                                            <attributes>
+                                                <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <font key="NSFont" metaFont="system" size="16"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="selectMovie:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VgV-fg-TqD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hdf-lj-HVC">
+                                <rect key="frame" x="290.5" y="208" width="103.5" height="47.5"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="The Social Network">
                                     <attributedString key="attributedTitle">
                                         <fragment content="The Social Network">
                                             <attributes>
                                                 <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <font key="NSFont" metaFont="system" size="15"/>
+                                                <font key="NSFont" metaFont="system" size="16"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -58,40 +115,33 @@
                                     <action selector="selectMovie:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iGz-Fv-0pQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Msq-xb-YBY">
-                                <rect key="frame" x="148" y="206" width="118" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Inception">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="selectMovie:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VgV-fg-TqD"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="movies" translatesAutoresizingMaskIntoConstraints="NO" id="eK4-aa-eDw">
-                                <rect key="frame" x="20" y="297" width="234" height="419"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OOq-7O-sac">
-                                <rect key="frame" x="170" y="772" width="74" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Reset">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="selectMovie:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jcu-mw-8co"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RIj-Z4-FzU">
-                                <rect key="frame" x="268" y="431" width="135" height="158"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Msq-xb-YBY" firstAttribute="trailing" secondItem="eK4-aa-eDw" secondAttribute="trailing" id="08s-0l-OYq"/>
+                            <constraint firstItem="EyO-N2-NhQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="0AQ-nC-b5o"/>
+                            <constraint firstItem="Msq-xb-YBY" firstAttribute="centerX" secondItem="OOq-7O-sac" secondAttribute="centerX" id="3m0-XH-idV"/>
+                            <constraint firstItem="VnM-QX-RRZ" firstAttribute="top" secondItem="Msq-xb-YBY" secondAttribute="top" id="5QK-Rw-dyG"/>
+                            <constraint firstItem="eK4-aa-eDw" firstAttribute="top" secondItem="VnM-QX-RRZ" secondAttribute="bottom" constant="34" id="6Ex-wL-oYo"/>
+                            <constraint firstItem="EyO-N2-NhQ" firstAttribute="centerX" secondItem="Msq-xb-YBY" secondAttribute="centerX" id="6aU-KZ-8eE"/>
+                            <constraint firstItem="VnM-QX-RRZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="BdG-of-0H0"/>
+                            <constraint firstItem="eK4-aa-eDw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="OOq-7O-sac" secondAttribute="leading" id="CUa-Dk-wgF"/>
+                            <constraint firstItem="RIj-Z4-FzU" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="OOq-7O-sac" secondAttribute="trailing" id="Isw-Ry-xGo"/>
+                            <constraint firstItem="VnM-QX-RRZ" firstAttribute="firstBaseline" secondItem="hdf-lj-HVC" secondAttribute="firstBaseline" id="NKA-AB-QdB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OOq-7O-sac" secondAttribute="bottom" constant="42" id="NfF-HY-o4A"/>
+                            <constraint firstItem="Msq-xb-YBY" firstAttribute="top" secondItem="hdf-lj-HVC" secondAttribute="top" id="OxV-BI-E6X"/>
+                            <constraint firstItem="OOq-7O-sac" firstAttribute="top" secondItem="eK4-aa-eDw" secondAttribute="bottom" constant="56" id="QNH-Dt-jWj"/>
+                            <constraint firstItem="RIj-Z4-FzU" firstAttribute="top" secondItem="hdf-lj-HVC" secondAttribute="bottom" constant="92" id="U4v-tX-BRU"/>
+                            <constraint firstItem="hdf-lj-HVC" firstAttribute="trailing" secondItem="RIj-Z4-FzU" secondAttribute="trailing" id="VML-AY-B2v"/>
+                            <constraint firstItem="RIj-Z4-FzU" firstAttribute="leading" secondItem="eK4-aa-eDw" secondAttribute="trailing" constant="13" id="Z6s-rp-kmC"/>
+                            <constraint firstItem="hdf-lj-HVC" firstAttribute="leading" secondItem="Msq-xb-YBY" secondAttribute="trailing" constant="37" id="Zqe-Kv-NRW"/>
+                            <constraint firstItem="VnM-QX-RRZ" firstAttribute="top" secondItem="EyO-N2-NhQ" secondAttribute="bottom" constant="58" id="dYd-TV-LOr"/>
+                            <constraint firstItem="Msq-xb-YBY" firstAttribute="leading" secondItem="VnM-QX-RRZ" secondAttribute="trailing" constant="31" id="fTt-ie-YkF"/>
+                            <constraint firstItem="VnM-QX-RRZ" firstAttribute="baseline" secondItem="hdf-lj-HVC" secondAttribute="baseline" id="mq8-oZ-OKF"/>
+                            <constraint firstItem="Msq-xb-YBY" firstAttribute="bottom" secondItem="hdf-lj-HVC" secondAttribute="bottom" id="q3b-wC-aAZ"/>
+                            <constraint firstItem="hdf-lj-HVC" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="vpt-8g-2im"/>
+                            <constraint firstItem="VnM-QX-RRZ" firstAttribute="leading" secondItem="eK4-aa-eDw" secondAttribute="leading" id="zsR-Ok-o23"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
