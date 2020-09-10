@@ -32,7 +32,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="movies" translatesAutoresizingMaskIntoConstraints="NO" id="eK4-aa-eDw">
-                                <rect key="frame" x="20" y="289.5" width="233.5" height="426.5"/>
+                                <rect key="frame" x="20" y="300" width="233.5" height="416"/>
                             </imageView>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OOq-7O-sac">
                                 <rect key="frame" x="20" y="772" width="374" height="48"/>
@@ -48,7 +48,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RIj-Z4-FzU">
-                                <rect key="frame" x="266.5" y="347.5" width="127.5" height="150"/>
+                                <rect key="frame" x="266.5" y="351" width="127.5" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="7oc-gw-mL5"/>
                                 </constraints>
@@ -57,17 +57,17 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VnM-QX-RRZ">
-                                <rect key="frame" x="20" y="208" width="109.5" height="47.5"/>
+                                <rect key="frame" x="20" y="208" width="109.5" height="58"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="75" id="fPX-TJ-7pZ"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="58" id="fPX-TJ-7pZ"/>
                                 </constraints>
-                                <state key="normal" title="Star Wars:  The Last Jedi">
+                                <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Star Wars:  The Last Jedi">
                                             <attributes>
                                                 <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <font key="NSFont" metaFont="system" size="16"/>
+                                                <font key="NSFont" metaFont="system" size="15"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -78,7 +78,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Msq-xb-YBY">
-                                <rect key="frame" x="160.5" y="208" width="93" height="47.5"/>
+                                <rect key="frame" x="160.5" y="208" width="93" height="58"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="93" id="99E-0y-myV"/>
@@ -88,7 +88,8 @@
                                         <fragment content="Inception">
                                             <attributes>
                                                 <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <font key="NSFont" metaFont="system" size="16"/>
+                                                <font key="NSFont" metaFont="system" size="15"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -98,14 +99,17 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hdf-lj-HVC">
-                                <rect key="frame" x="290.5" y="208" width="103.5" height="47.5"/>
+                                <rect key="frame" x="290.5" y="208" width="103.5" height="58"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="Iii-4C-7Su"/>
+                                </constraints>
                                 <state key="normal" title="The Social Network">
                                     <attributedString key="attributedTitle">
                                         <fragment content="The Social Network">
                                             <attributes>
                                                 <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <font key="NSFont" metaFont="system" size="16"/>
+                                                <font key="NSFont" metaFont="system" size="15"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
@@ -131,7 +135,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OOq-7O-sac" secondAttribute="bottom" constant="42" id="NfF-HY-o4A"/>
                             <constraint firstItem="Msq-xb-YBY" firstAttribute="top" secondItem="hdf-lj-HVC" secondAttribute="top" id="OxV-BI-E6X"/>
                             <constraint firstItem="OOq-7O-sac" firstAttribute="top" secondItem="eK4-aa-eDw" secondAttribute="bottom" constant="56" id="QNH-Dt-jWj"/>
-                            <constraint firstItem="RIj-Z4-FzU" firstAttribute="top" secondItem="hdf-lj-HVC" secondAttribute="bottom" constant="92" id="U4v-tX-BRU"/>
+                            <constraint firstItem="RIj-Z4-FzU" firstAttribute="top" secondItem="hdf-lj-HVC" secondAttribute="bottom" constant="85" id="U4v-tX-BRU"/>
                             <constraint firstItem="hdf-lj-HVC" firstAttribute="trailing" secondItem="RIj-Z4-FzU" secondAttribute="trailing" id="VML-AY-B2v"/>
                             <constraint firstItem="RIj-Z4-FzU" firstAttribute="leading" secondItem="eK4-aa-eDw" secondAttribute="trailing" constant="13" id="Z6s-rp-kmC"/>
                             <constraint firstItem="hdf-lj-HVC" firstAttribute="leading" secondItem="Msq-xb-YBY" secondAttribute="trailing" constant="37" id="Zqe-Kv-NRW"/>
