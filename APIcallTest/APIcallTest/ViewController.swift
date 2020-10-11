@@ -30,6 +30,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             
             makeAPICall("http://www.omdbapi.com/?i=tt3896198&apikey=e15423a9&t=Real+Steel")
             
+            makeAPICall("http://www.omdbapi.com/?i=tt3896198&apikey=e15423a9&t=Portrait+of+a+Lady+on+Fire")
+            
+            makeAPICall("http://www.omdbapi.com/?i=tt3896198&apikey=e15423a9&t=The+Farewell")
+            
             
         }
         
@@ -43,7 +47,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         movieTable.delegate = self
         
-        self.movieTable.isEditing = true
+        //self.movieTable.isEditing = true
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -63,7 +67,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return cell!
         
     }
-    
     func makeAPICall(_ url: String){
         
         let session = URLSession(configuration: URLSessionConfiguration.default)
@@ -75,7 +78,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 let response = NSString(data: data, encoding: String.Encoding.utf8.rawValue)
                 print(response!)
                 
-                let data = response?.data(using: 9)
+                let data = response!.data(using:String.Encoding.utf8.rawValue)
                 
                 let json = try? JSONSerialization.jsonObject(with: data!, options: [])
                 

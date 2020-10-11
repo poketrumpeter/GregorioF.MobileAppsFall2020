@@ -13,6 +13,8 @@
 		42136651252AFE1200EFFD65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4213664F252AFE1200EFFD65 /* Main.storyboard */; };
 		42136653252AFE1500EFFD65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42136652252AFE1500EFFD65 /* Assets.xcassets */; };
 		42136656252AFE1500EFFD65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42136654252AFE1500EFFD65 /* LaunchScreen.storyboard */; };
+		42D2F0422532DC4B00BCEB01 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D2F0412532DC4B00BCEB01 /* AlertController.swift */; };
+		42D2F0442532E0D400BCEB01 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D2F0432532E0D400BCEB01 /* UIImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		42136652252AFE1500EFFD65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42136655252AFE1500EFFD65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42136657252AFE1500EFFD65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42D2F0412532DC4B00BCEB01 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
+		42D2F0432532E0D400BCEB01 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				42136652252AFE1500EFFD65 /* Assets.xcassets */,
 				42136654252AFE1500EFFD65 /* LaunchScreen.storyboard */,
 				42136657252AFE1500EFFD65 /* Info.plist */,
+				42D2F0432532E0D400BCEB01 /* UIImage.swift */,
+				42D2F0412532DC4B00BCEB01 /* AlertController.swift */,
 			);
 			path = "MovieReviews - Project 1";
 			sourceTree = "<group>";
@@ -139,6 +145,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4213664E252AFE1200EFFD65 /* ViewController.swift in Sources */,
+				42D2F0442532E0D400BCEB01 /* UIImage.swift in Sources */,
+				42D2F0422532DC4B00BCEB01 /* AlertController.swift in Sources */,
 				4213664A252AFE1200EFFD65 /* AppDelegate.swift in Sources */,
 				4213664C252AFE1200EFFD65 /* SceneDelegate.swift in Sources */,
 			);
