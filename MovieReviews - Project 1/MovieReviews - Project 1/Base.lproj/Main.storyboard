@@ -15,9 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hah-FK-Ydf">
-                                <rect key="frame" x="8" y="110" width="398" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hah-FK-Ydf">
+                                <rect key="frame" x="8" y="82" width="398" height="32"/>
                                 <segments>
                                     <segment title="Rotten Tomatoes"/>
                                     <segment title="Metacritic"/>
@@ -27,27 +26,36 @@
                                     <action selector="changeMovieList:" destination="BYZ-38-t0r" eventType="valueChanged" id="Ajw-R6-Hwb"/>
                                 </connections>
                             </segmentedControl>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vz3-xk-AAT">
-                                <rect key="frame" x="20" y="166" width="374" height="607"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WuO-sf-1V8">
+                                <rect key="frame" x="175.5" y="828" width="63" height="30"/>
+                                <state key="normal" title="Compare"/>
+                                <connections>
+                                    <action selector="compareChoices:" destination="BYZ-38-t0r" eventType="touchUpInside" id="igf-43-Uct"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vz3-xk-AAT">
+                                <rect key="frame" x="24.5" y="121" width="365" height="702"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Vz3-xk-AAT" secondAttribute="height" multiplier="370:711" id="VLQ-pp-FTQ"/>
+                                </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cellID" textLabel="8QR-VN-Scg" detailTextLabel="Sri-tI-VnF" style="IBUITableViewCellStyleValue1" id="h7h-gT-kxC">
-                                        <rect key="frame" x="0.0" y="28" width="374" height="43.5"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" showsReorderControl="YES" hidesAccessoryWhenEditing="NO" indentationWidth="0.0" shouldIndentWhileEditing="NO" reuseIdentifier="cellID" textLabel="8QR-VN-Scg" detailTextLabel="Sri-tI-VnF" rowHeight="65" style="IBUITableViewCellStyleValue1" id="h7h-gT-kxC">
+                                        <rect key="frame" x="0.0" y="28" width="365" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="h7h-gT-kxC" id="SWu-Zk-CFi">
-                                            <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="365" height="65"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8QR-VN-Scg">
-                                                    <rect key="frame" x="20" y="12" width="33.5" height="20.5"/>
+                                                    <rect key="frame" x="20" y="23" width="33.5" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Sri-tI-VnF">
-                                                    <rect key="frame" x="310" y="12" width="44" height="20.5"/>
+                                                    <rect key="frame" x="301" y="23" width="44" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -57,18 +65,78 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="VLQ-pp-FTQ"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <exclude reference="VLQ-pp-FTQ"/>
+                                    </mask>
+                                </variation>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WuO-sf-1V8">
-                                <rect key="frame" x="167" y="814" width="114" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Compare"/>
-                                <connections>
-                                    <action selector="compareChoices:" destination="BYZ-38-t0r" eventType="touchUpInside" id="igf-43-Uct"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Vz3-xk-AAT" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="9PA-wF-Y1R"/>
+                            <constraint firstItem="Vz3-xk-AAT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="BGK-De-d4e"/>
+                            <constraint firstItem="hah-FK-Ydf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BY5-nB-wDp"/>
+                            <constraint firstItem="WuO-sf-1V8" firstAttribute="top" secondItem="Vz3-xk-AAT" secondAttribute="bottom" constant="5" id="GWU-JV-kgv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Vz3-xk-AAT" secondAttribute="trailing" constant="-38" id="RHA-Ya-Uja"/>
+                            <constraint firstItem="Vz3-xk-AAT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="YKj-nl-nAW"/>
+                            <constraint firstItem="Vz3-xk-AAT" firstAttribute="centerX" secondItem="WuO-sf-1V8" secondAttribute="centerX" id="ZIr-kV-yBo"/>
+                            <constraint firstItem="hah-FK-Ydf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="38" id="fwN-Is-N8v">
+                                <variation key="heightClass=compact-widthClass=compact" constant="20"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="22"/>
+                            </constraint>
+                            <constraint firstItem="Vz3-xk-AAT" firstAttribute="top" secondItem="hah-FK-Ydf" secondAttribute="bottom" constant="8" id="hke-bf-O3n"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WuO-sf-1V8" secondAttribute="bottom" constant="4" id="jhi-aZ-0pT"/>
+                            <constraint firstItem="Vz3-xk-AAT" firstAttribute="centerX" secondItem="WuO-sf-1V8" secondAttribute="centerX" id="nbn-cl-7OI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hah-FK-Ydf" secondAttribute="trailing" id="osA-sm-NKM"/>
+                            <constraint firstItem="hah-FK-Ydf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sSS-0a-WPW"/>
+                            <constraint firstItem="Vz3-xk-AAT" firstAttribute="centerX" secondItem="hah-FK-Ydf" secondAttribute="centerX" id="vFC-QY-b11"/>
+                            <constraint firstItem="WuO-sf-1V8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vmR-bg-PoX"/>
+                            <constraint firstItem="Vz3-xk-AAT" firstAttribute="top" secondItem="hah-FK-Ydf" secondAttribute="bottom" constant="8" id="wjF-AA-qS4"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="BGK-De-d4e"/>
+                                <exclude reference="RHA-Ya-Uja"/>
+                                <exclude reference="YKj-nl-nAW"/>
+                                <exclude reference="ZIr-kV-yBo"/>
+                                <exclude reference="vFC-QY-b11"/>
+                                <exclude reference="wjF-AA-qS4"/>
+                                <exclude reference="vmR-bg-PoX"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="osA-sm-NKM"/>
+                                <exclude reference="9PA-wF-Y1R"/>
+                                <include reference="YKj-nl-nAW"/>
+                                <include reference="ZIr-kV-yBo"/>
+                                <exclude reference="nbn-cl-7OI"/>
+                                <include reference="vFC-QY-b11"/>
+                                <exclude reference="BY5-nB-wDp"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <exclude reference="osA-sm-NKM"/>
+                                <exclude reference="9PA-wF-Y1R"/>
+                                <include reference="BGK-De-d4e"/>
+                                <include reference="RHA-Ya-Uja"/>
+                                <exclude reference="hke-bf-O3n"/>
+                                <exclude reference="nbn-cl-7OI"/>
+                                <include reference="wjF-AA-qS4"/>
+                                <exclude reference="BY5-nB-wDp"/>
+                                <include reference="sSS-0a-WPW"/>
+                                <include reference="GWU-JV-kgv"/>
+                                <include reference="vmR-bg-PoX"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="compareButton" destination="WuO-sf-1V8" id="O1X-nP-opa"/>
@@ -77,7 +145,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="102.45535714285714"/>
+            <point key="canvasLocation" x="136.28185907046478" y="100"/>
         </scene>
     </scenes>
 </document>

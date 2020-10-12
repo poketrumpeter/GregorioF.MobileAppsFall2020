@@ -15,6 +15,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     @IBOutlet weak var compareButton: UIButton!
     
+    
     var score : Dictionary = Dictionary<String, Any>()
     
     let cellID = "cellID"
@@ -49,7 +50,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             for i in rottenTomatoes{
                 
                 if(movies[i] == nil){
-                    print("Making Call")
+                    //print("Making Call")
                     makeAPICall(movieTitle: i)
                 }
                 
@@ -174,6 +175,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         if(cell == nil){
             cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: cellID)
         }
+
+        cell?.textLabel?.numberOfLines = 2
+        cell?.textLabel?.font = UIFont.systemFont(ofSize: CGFloat(15))
+        cell?.detailTextLabel?.font = UIFont.systemFont(ofSize: CGFloat(15))
         
         //print(movies)
         cell?.textLabel?.text = movies[movieArray[indexPath.row]]?.title
@@ -347,3 +352,5 @@ struct MovieInfo {
     
     var ratings: Dictionary = Dictionary<String, String>()
 }
+
+
