@@ -25,9 +25,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     var critic : Bool = false
     
     var movieArray = [String]()
-    var tomatoScores = [String]()
-    var metaCriticScores = [String]()
-    var displayScores = [String]()
+    var personalRankings = [String]()
     
     //var movies: Dictionary = Dictionary<String, String>()
     
@@ -53,12 +51,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                     //print("Making Call")
                     makeAPICall(movieTitle: i)
                 }
-                
             }
-            
             movieArray = rottenTomatoes
             reviewer = "Rotten Tomatoes"
-            
+    
             movieTable.reloadData()
         
         }
@@ -94,7 +90,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                 }
             }
             
-            movieArray = rottenTomatoes
+            movieArray = personalRankings
             reviewer = ""
             
             movieTable.isEditing = true;
@@ -102,6 +98,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             movieTable.reloadData()
         }
     }
+    
+    //Alert controller information from Textbook talking about ALerts
     
     @IBAction func compareChoices(_ sender: UIButton) {
         
@@ -114,12 +112,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
                     count+=1
                     matches.append(movieArray[i])
                     }
-                
             }
-            
+        
             var message: String
             
-            if count == 1 {
+            if(count == 0){
+                message = "Your rankings matched none of the Rottne tomato Rankings"
+            }
+            
+            else if count == 1 {
                 message = "Your ranking of " + movies[matches[0]]!.title + " matched the Rotten Tomatoes rankings"
             }
             else{
@@ -156,11 +157,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         compareButton.isHidden = true
         
+        personalRankings = rottenTomatoes
         movieArray = rottenTomatoes
+        
         reviewer = "Rotten Tomatoes"
 
     
     }
+    
+    //Table view Initialization and Display From Textbook Chapter on Tableviews
     
     //function that returns the size of main tableview array
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -187,6 +192,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return cell!
     }
 
+    
+    //Code for making the API call from https://thatthinginswift.com/write-your-own-api-clients-swift/
+    
+    //Decoding JSON into values gotten for Apple Tutorial https://developer.apple.com/swift/blog/?id=37
+    
     func makeAPICall(movieTitle: String){
         
         let session = URLSession(configuration: URLSessionConfiguration.default)
@@ -290,6 +300,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         task.resume()
     }
     
+    
+    //Helpful tutorials about reording Table view Cells from https://www.ralfebert.de/ios-examples/uikit/uitableviewcontroller/reorderable-cells/
+    
+    
     func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
         return .none;
     }
@@ -304,11 +318,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let movedObject = self.movieArray[sourceIndexPath.row]
         movieArray.remove(at: sourceIndexPath.row)
         movieArray.insert(movedObject, at: destinationIndexPath.row)
-
         
-        
+        personalRankings = movieArray
         }
     
+    //Helpful tutorial for resizing alert https://www.youtube.com/watch?v=IX7NYocgHC4
+    
+    // Information on how to select Table view From TextBook
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let selectedItem = movies[movieArray[indexPath.row]]
         
