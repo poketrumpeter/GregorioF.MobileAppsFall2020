@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">lab7 Gaming Choices</string>
+    <string name="characterName">"Enter your Character's name"</string>
+    <string name="appTitle">Which choice would you make</string>
+    <string name="characterHint">CharacterName</string>
+    <string name="slayMonster">Slay Monster</string>
+    <string name="TitleView">Gaming Choices</string>
+    <string name="girlChoice">Kiss the Girl</string>
+</resources>
