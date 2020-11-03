@@ -21,17 +21,25 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         choiceImage = findViewById(R.id.choiceImage)
+        responseOutput = findViewById(R.id.OutputResponse)
+        nameEdit = findViewById(R.id.changeName)
     }
 
     fun showMonsterImage(view: View){
 
         choiceImage.setImageResource(R.drawable.geralt_vs_giant)
 
+        responseOutput.text = nameEdit.text
+        responseOutput.append(" goes to slay the hideous monster")
+
     }
 
     fun showKissImage(view: View){
 
         choiceImage.setImageResource(R.drawable.geralt_kissing_triss)
+
+        responseOutput.text = nameEdit.text
+        responseOutput.append(" goes to kiss the girl")
 
     }
 
