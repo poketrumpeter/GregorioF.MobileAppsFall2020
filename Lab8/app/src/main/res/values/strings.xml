@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Lab_8_Entertainment</string>
+    <string name="titleString">Entertainment Preference</string>
+    <string name="MovieLabel">Movie</string>
+    <string name="videogameLabel">Videogame</string>
+    <string name="bigBudget">Big Budget</string>
+    <string name="indieLabel">Indie</string>
+    <string name="timeLabel">Now?</string>
+    <string name="generateButton">What should i play/watch</string>
+    <string name="outputString"/>
+    <string name="movieCalculation">"You should watch %s %s"</string>
+    <string name="gameCalculation">"You should play %s %s"</string>
+    <string name="bothCalculation">"You should watch %s and play %s %s"</string>
+</resources>

@@ -11,8 +11,6 @@ import android.widget.TextView
 class MainActivity : AppCompatActivity() {
 
     lateinit var choiceImage: ImageView
-    lateinit var slayMonster: Button
-    lateinit var kissGirl: Button
     lateinit var responseOutput: TextView
     lateinit var nameEdit: EditText
 
