@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Lab9</string>
+    <string name="Title">Pick a Movie</string>
+    <string name="Movie1">Wonder Woman 1984</string>
+    <string name="Movie2">Black Widow</string>
+    <string name="Movie3">A Quiet Place Part 2</string>
+    <string name="ActivityButton">Write a Review</string>
+    <string name="reviewText" />
+    <string name="title_activity_movie">MovieActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="writeReview">Write a Review</string>
+    <string name="streamingOutput">This movie should be availible %s soon</string>
+</resources>
