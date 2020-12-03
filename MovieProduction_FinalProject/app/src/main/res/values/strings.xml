@@ -45,12 +45,12 @@
     <string name="MarketingMessageLabel">Write a blurb advertising your movie</string>
 
     <string name="BoxOfficeDisplay">Box Office: $%s</string>
-    <string name="boxOfficeSuccess">Your movie made bank! Great job! You should make another film with the leftover</string>
-    <string name="boxOfficeFail">The movie didnt make its money back. You may need to take out some loans to continue making movies.</string>
-    <string name="ActionFail">Your action movie failed to give a thrill to audiences. It will not be a memorable action film</string>
-    <string name="ActionSuccess">There is something special about this action film. It had heart but also that non-stop energy moviegoers love. It will be remembered fondly</string>
-    <string name="DramaSuccess">Critics love your film. The emotions and thought for this movie was great. It is also getting some award buzz.</string>
-    <string name="DramaFail">Crafting a drama is hard. You know this first hand now. After some anticipation, this move just was not a good movie.</string>
-    <string name="Horror">Horror is hard to really make a splash. You made a very average horror film. Could have been worse.</string>
+    <string name="boxOfficeSuccess">Your movie made bank! Great job! You should make another film with the leftover. </string>
+    <string name="boxOfficeFail">The movie didnt make its money back. You may need to take out some loans to continue making movies. </string>
+    <string name="ActionFail">Your action movie failed to give a thrill to audiences. It will not be a memorable action film. </string>
+    <string name="ActionSuccess">There is something special about this action film. It had heart but also that non-stop energy moviegoers love. It will be remembered fondly. </string>
+    <string name="DramaSuccess">Critics love your film. The emotions and thought for this movie was great. It is also getting some award buzz. </string>
+    <string name="DramaFail">Crafting a drama is hard. You know this first hand now. After some anticipation, this move just was not a good movie. </string>
+    <string name="Horror">Horror is hard to really make a splash. You made a very average horror film. Could have been worse. </string>
     <string name="StartOver">Make Another Movie</string>
 </resources>
