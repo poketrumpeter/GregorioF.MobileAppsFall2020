@@ -3,6 +3,13 @@ package com.example.movieproduction_finalproject
 import java.io.Serializable
 import kotlin.math.cos
 
+
+//https://medium.com/@gaandlaneeraja/how-to-pass-objects-between-android-activities-86f2cfb61bd4
+
+//Used this source to learn how to pass a custom object between activities
+//This basically allows the object to be serialized, or formatted for being able to be transported
+
+
 public class Movie : Serializable{
     private var title: String = ""
     private var studio: String = ""
