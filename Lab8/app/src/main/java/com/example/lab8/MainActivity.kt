@@ -158,8 +158,5 @@ import com.google.android.material.snackbar.Snackbar
          videoGame = savedInstanceState.getBoolean("Videogame", false)
          genre = savedInstanceState.getString("genre", "")
 
-
-
-
      }
  }
