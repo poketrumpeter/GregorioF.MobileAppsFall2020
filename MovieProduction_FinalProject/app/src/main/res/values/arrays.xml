@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="budget_choice">
+        <item>1 Million (Big Budget)</item>
+        <item>750K (Standard)</item>
+        <item>250K (Small Studio)</item>
+        <item>75K (Indie)</item>
+    </string-array>
+
+    <string-array name="spending_options">
+        <item>How much</item>
+        <item>5K</item>
+        <item>20K</item>
+        <item>50K</item>
+        <item>100K</item>
+    </string-array>
+
+    <string-array name="actor_options">
+        <item>Choose Actor</item>
+        <item>Award Winner(100K)</item>
+        <item>High-Profile (75K)</item>
+        <item>Average (50K)</item>
+        <item>Indie (25K)</item>
+        <item>No-Name (5K)</item>
+
+    </string-array>
+
+    <string-array name="more_spending_options">
+        <item>How much</item>
+        <item>5K</item>
+        <item>20K</item>
+        <item>50K</item>
+        <item>75K</item>
+        <item>100K</item>
+        <item>200K</item>
+    </string-array>
+</resources>
