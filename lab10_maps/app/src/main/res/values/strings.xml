@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">lab10_maps</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="dialog_title">Location Access</string>
+    <string name="dialog_message">Location access needed for this app to show your current location</string>
+    <string name="dialogOk">OK</string>
+    <string name="dialogCancel">Cancel</string>
+</resources>
